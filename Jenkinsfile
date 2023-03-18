@@ -12,7 +12,7 @@ pipeline {
         stage('first'){
             steps{
                 script{
-                    bat 'echo 'Hello World fron Git"'
+                    bat 'echo "Hello World fron Git"'
                 }
             }
         }
