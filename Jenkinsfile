@@ -1,8 +1,3 @@
-import groovy.json.JsonSlurperClassic
-
-def jsonParse(def json) {
-    new groovy.json.JsonSlurperClassic.parse.Text(json)
-}
 pipeline {
     agent {label 'principal'}
     environment {
