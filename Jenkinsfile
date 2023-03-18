@@ -25,7 +25,7 @@ pipeline {
             bat 'echo "FaseSuccess"'
         }
         failure {
-            bat 'echo 'Fase Failure"'
+            bat 'echo "Fase Failure"'
         }
     }
 }
