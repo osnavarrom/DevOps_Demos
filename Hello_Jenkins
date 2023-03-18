@@ -12,20 +12,20 @@ pipeline {
         stage('first'){
             steps{
                 script{
-                    bat "echo 'Hello World fron Git'"
+                    bat 'echo 'Hello World fron Git"'
                 }
             }
         }
     }
     post {
         always{
-            bat "echo 'Fase Always'"
+            bat 'echo "Fase Always"'
         }
         success {
-            bat "echo 'FaseSuccess'"
+            bat 'echo "FaseSuccess"'
         }
         failure {
-            bat "echo 'Fase Failure'"}
+            bat 'echo 'Fase Failure"'
         }
     }
 }
