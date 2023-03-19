@@ -11,13 +11,13 @@ pipeline {
     }
     post {
         always{
-            'echo "Fase Always"'
+            echo "Fase Always"
         }
         success {
-            'echo "FaseSuccess"'
+            echo "FaseSuccess"
         }
         failure {
-            'echo "Fase Failure"'
+            echo "Fase Failure"
         }
     }
 }
