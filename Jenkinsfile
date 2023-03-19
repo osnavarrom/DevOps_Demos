@@ -4,7 +4,7 @@ pipeline {
         stage('Other_Hello'){
             steps{
                 script{
-                    echo "Hello World fron Git"
+                    echo "Hello World from Git"
                 }
             }
         }
