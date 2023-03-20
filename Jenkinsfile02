@@ -1,0 +1,25 @@
+pipeline{
+	agent any
+	tools {
+		nodejs = "19.8.1"
+	}
+	parameters {
+		string (name: 'container_name', defaultValue: 'web_page', description: 'Doker container name')
+		string (name: 'image_name', defaultValue: 'image_page', description: 'Doker image name')
+		string (name: 'tag_name', defaultValue: 'lts', description: 'Web page image tag')
+		string (name: 'container_port', defaultValue: '90', description: 'Container port')
+	}
+	stages {
+		stage('install') {
+			steps {
+				git branch:'main', url:'https://github.com/osnavarrom/DevOps_Demos.git'
+				bat 'npm install'
+			}
+		stage('test') {
+			steps {
+				git branch:'main', url:'https://github.com/osnavarrom/DevOps_Demos.git'
+				bat 'npm install'
+			}
+		}
+	}
+}
